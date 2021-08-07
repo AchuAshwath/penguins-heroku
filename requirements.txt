@@ -2,5 +2,4 @@ numpy==1.18.1
 pandas==1.2.4
 streamlit==0.85.1
 scikit-learn==0.24.2
-sklearn==0.0
-pickleshare==0.7.5
+
