@@ -57,7 +57,7 @@ else:
     st.write(input_df)
 
 # importing the penguins file and processing
-penguins_raw = pd.read_csv('D:/achu/programs/Projects/Streamlit/penguins_cleaned.csv')
+penguins_raw = pd.read_csv('penguins_cleaned.csv')
 penguins = penguins_raw.drop(columns=['species'])
 df = pd.concat([input_df, penguins], axis=0)
 
@@ -71,7 +71,7 @@ for col in encode:
 df = df[:1]
 
 # reads in saved classification model
-load_clf = pickle.load(open('D:/achu/programs/Projects/Streamlit/penguins_clf.pkl','rb'))
+load_clf = pickle.load(open('penguins_clf.pkl','rb'))
 
 # prediction
 prediction = load_clf.predict(df)
